@@ -1,0 +1,206 @@
+/* Base styles for the top section */
+.Top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Styles for individual headings in the top section */
+.TopHeading {
+    display: flex;
+    flex-direction: column;
+    color: #002F34;
+    border-right: 2px solid rgb(190, 190, 190);
+    padding: 20px;
+    text-align: center;
+}
+
+.TopHeading .try {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.but {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Container for app stores */
+.AppsStoresContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styles for stickers section */
+.Stickers span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Stickers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Styles for app store logos */
+.appstore {
+    width: 200px;
+    height: auto;
+}
+
+.playstore {
+    width: 160px;
+    height: auto;
+}
+
+/* Footer list section */
+.FooterList {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(243, 243, 243);
+    padding: 20px 0; /* Added padding */
+}
+
+.FooterListContainer {
+    list-style: none;
+    margin: 0; /* Adjusted margin */
+    padding: 0; /* Adjusted padding */
+}
+
+.FooterListContainer span {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.FooterListContainer ul {
+    margin-top: 10px;
+    padding: 0; /* Adjusted padding */
+}
+
+.FooterListContainer li {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    color: gray;
+}
+
+.FooterListContainer li:hover {
+    color: black;
+}
+
+/* Right part section */
+.Rightpart {
+    display: flex;
+    margin: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+}
+
+/* Social handles section */
+.socialHandles {
+    display: flex;
+    margin-top: 10px;
+}
+
+.socialHandles i {
+    font-size: 26px;
+    margin: 10px;
+    color: #557477;
+    cursor: pointer;
+}
+
+/* Footer end section */
+.footerEnd {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #002F34;
+}
+
+.FooterEndContainer {
+    display: flex;
+    margin: 16px auto;
+    justify-content: center;
+    gap: 60px;
+}
+
+.FooterEndContainer .img1 {
+    width: 250px;
+    padding-right: 50px;
+    border-right: 3px solid white;
+}
+
+.olx {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+}
+
+.imgFooter {
+    width: 140px;
+    padding-left: 10px;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px; /* Adjusted margin */
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Media query for screens larger than 768px */
+@media only screen and (min-width: 768px) {
+    .Top {
+        justify-content: space-between;
+    }
+
+    .TopHeading {
+        padding: 0 20px;
+        border-right: none;
+    }
+
+    .but {
+        font-size: 26px;
+    }
+
+    .AppsStoresContainer {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .Stickers {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .FooterList {
+        padding: 20px 0;
+    }
+
+    .FooterListContainer {
+        margin: 30px 0;
+    }
+
+    .end {
+        margin: 0 300px;
+    }
+}
